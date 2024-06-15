@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark bg-primary">
+<nav class="navbar navbar-dark bg-light">
     <a class="navbar-brand custom-navbar-brand" href="/">
       StudyApp
     </a>
@@ -6,9 +6,10 @@
     <form method="GET" action = "{% url "home" %}">
       <input type = "text" name = "q" placeholder = "Search Rooms ..." />
     </form>
-
-
-
-
-
+    {% if request.user.is_authenticated %}
+      <a href = "{% url "logout" %}"> logout </a>
+    {% else %}
+      <a href = "{% url "login" %}"> login </a>
+    {% endif %}
+   
   </nav> 

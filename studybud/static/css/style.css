@@ -1,6 +1,6 @@
 .custom-navbar-brand {
     font-size: 2rem; /* Adjust the font size as needed */
-    color: yellow !important; /* Use !important to override Bootstrap's styles */
+    color: rgb(255, 0, 191) !important; /* Use !important to override Bootstrap's styles */
   }
 
 .home-container{
