@@ -1,0 +1,4 @@
+.custom-navbar-brand {
+    font-size: 2rem; /* Adjust the font size as needed */
+    color: red !important; /* Use !important to override Bootstrap's styles */
+  }
