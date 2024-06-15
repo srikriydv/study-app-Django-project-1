@@ -1,25 +1,38 @@
 {% extends "base/main.html" %}
 
 {% block content %}
+    <div class= "home-container">
+        <div>
+            <h3> Browse Topic </h3>
+            <hr>
+            {% for topic in topics %}
+                {{topic}}
+                <br>
 
-<h1> this is the home page </h1>
 
-<div>
-    <a href="{% url "create-room" %}">create room </a>
-
-    <div>
-
-        {% for room in rooms %}
-            <div>
-                <span>@{{room.host.username}}</span>
-                <h3> {{room.id}} --- <a href="/room/{{room.id}}">{{room.name}}</a></h3>
-                <a href= "{% url 'update-room' room.id %}">update record </a>
-                <small> {{room.topic.name}}</small>
-            </div>
+            {% endfor %}
+        </div>
         
-        {% endfor %}
+        <div>
+
+            <a href="{% url "create-room" %}">create room </a>
+
+                <div>
+
+                    {% for room in rooms %}
+                        <div>
+                            <span>@{{room.host.username}}</span>
+                            <h3> {{room.id}} --- <a href="/room/{{room.id}}">{{room.name}}</a></h3>
+                            <a href= "{% url 'update-room' room.id %}">update </a>
+                            <a href= "{% url 'delete-room' room.id %}">delete </a>
+                            <small> {{room.topic.name}}</small>
+                            <hr>
+                        </div>
+                    
+                    {% endfor %}
+                </div>
+        </div>
     </div>
-</div>
 
 {% endblock content %}
 

@@ -2,3 +2,9 @@
     font-size: 2rem; /* Adjust the font size as needed */
     color: yellow !important; /* Use !important to override Bootstrap's styles */
   }
+
+.home-container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  
+}
