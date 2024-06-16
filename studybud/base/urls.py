@@ -9,6 +9,7 @@ urlpatterns = [
     path("delete-record/<str:pk>", view=views.deleteRoom, name='delete-room'),
     path("login", view=views.loginPage, name='login'),
     path("logout", view=views.logoutUser, name='logout'),
+     path("register", view=views.registerPage, name='register'),
     
     
 ]
