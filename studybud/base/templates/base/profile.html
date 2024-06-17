@@ -1,23 +1,27 @@
 {% extends "base/main.html" %}
 
 {% block content %}
-    <div class= "home-container">
+
+    <h1> {{user.username}}</h1>
+
+    <div class="profile-container">
         <div>
             {% include "base/topic_component.html" %}
         </div>
         <div>
-            <h5> {{room_count}} room available </h5>
-            <a href="{% url "create-room" %}">create room </a>
-                <div>
-                   {% include "base/feed.html" %}
-                </div>
-        </div> 
+            {% include "base/feed.html" %}
+
+        </div>
         <div>
             {% include "base/activity_component.html" %}
         </div>
+
     </div>
 
+
 {% endblock content %}
+
+
 
 
 

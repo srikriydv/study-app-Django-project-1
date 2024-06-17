@@ -1,15 +1,21 @@
 .custom-navbar-brand {
-    font-size: 2rem; /* Adjust the font size as needed */
-    color: rgb(255, 0, 191) !important; /* Use !important to override Bootstrap's styles */
-  }
-
-.home-container{
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  
+  font-size: 2rem; /* Adjust the font size as needed */
+  color: rgb(
+    255,
+    0,
+    191
+  ) !important; /* Use !important to override Bootstrap's styles */
 }
-.room-container{
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.room-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  
+}
+.profile-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
 }
