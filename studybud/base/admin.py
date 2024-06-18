@@ -3,7 +3,6 @@ from .models import Topic, Room, Message
 
 # Register your models here.
 
-
 admin.site.register(Topic)
 admin.site.register(Room)
 
