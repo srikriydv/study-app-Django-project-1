@@ -1,24 +1,29 @@
 {% extends "base/main.html" %}
 
 {% block content %}
-    <div class= "home-container">
-        <div>
-            {% include "base/topic_component.html" %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="mb-2">
+                {% include "base/topic_component.html" %}
+            </div>
         </div>
-        <div>
-            <h5> {{room_count}} room available </h5>
-            <a href="{% url "create-room" %}">create room </a>
-                <div>
-                   {% include "base/feed.html" %}
+        <div class="col-md-6 mt-2">
+            <div class="card mb-6">
+                <div class="card-body">
+                    <h5>{{ room_count }} rooms available</h5>
+                    <a href="{% url 'create-room' %}" class="btn btn-primary">Create Room</a>
                 </div>
-        </div> 
-        <div>
-            {% include "base/activity_component.html" %}
+            </div>
+            <div class="mb-4">
+                {% include "base/feed.html" %}
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-4">
+                {% include "base/activity_component.html" %}
+            </div>
         </div>
     </div>
-
+</div>
 {% endblock content %}
-
-
-
-

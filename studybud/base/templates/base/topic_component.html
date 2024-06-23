@@ -1,10 +1,16 @@
-<h4> Browse Topic </h4>
-<hr>
-<div>
-    <a href="{% url "home" %}">All</a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="mt-4">Browse Topic</h4>
+            <hr>
+            <div class="mb-3">
+                <a href="{% url 'home' %}" class="btn btn-outline-primary btn-sm">All</a>
+            </div>
+            {% for topic in topics %}
+            <div class="mb-3">
+                <a href="{% url 'home' %}?q={{ topic.name }}" class="btn btn-outline-primary btn-sm">{{ topic.name }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
-{% for topic in topics %}
-<div>
-    <a href="{% url "home" %}?q={{topic.name}}">{{topic.name}}</a>
-</div>
-{% endfor %} 
