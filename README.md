@@ -56,6 +56,29 @@ A Django application designed to help users study and manage their learning mate
 - **Access the app**: Open your web browser and go to `http://127.0.0.1:8000/`.
 - **Admin Interface**: Access the admin interface at `http://127.0.0.1:8000/admin/` to manage users and study materials.
 
+## Screenshots
+
+Below are some screenshots of the Photo Simple App:
+
+
+### Home Page
+![Home](https://github.com/user-attachments/assets/6276f6c8-0256-4f8f-8ca6-ede2e79a193f)
+
+### Login Page
+![login](https://github.com/user-attachments/assets/76d0cdb0-3a0e-4800-95d0-a28911ff2f93)
+
+### Register Page
+![register](https://github.com/user-attachments/assets/18ffa809-9396-4e82-82d4-7fc12ddc6785)
+
+### Update Profile Page
+![update Profile](https://github.com/user-attachments/assets/de12770f-95a5-4409-a3a8-719bc0824918)
+
+
+### Create Room Page
+![Create-room](https://github.com/user-attachments/assets/e9c286a5-f503-4c5d-ba93-2b31ff662968)
+
+### Room Page
+![room-page](https://github.com/user-attachments/assets/6479c4dc-1521-4ce7-b408-85f390b2d162)
 
 ## License
 
