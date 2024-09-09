@@ -1,4 +1,3 @@
-```markdown
 # Django Study App
 
 A Django application designed to help users study and manage their learning materials. This app includes features such as creating and managing study notes, tracking progress, and more.
@@ -65,4 +64,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any questions or feedback, please contact [srikri5462ydv@gmai.com](mailto:srikri5462ydv@gmai.com).
-```
